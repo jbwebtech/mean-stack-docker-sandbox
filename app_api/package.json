@@ -5,7 +5,7 @@
   "main": "app_api.js",
   "scripts": {
     "start": "node ./app_api.js",
-    "dev": "nodemon ./app_api.js"
+    "debug": "nodemon ./app_api.js"
   },
   "author": "",
   "license": "ISC",
