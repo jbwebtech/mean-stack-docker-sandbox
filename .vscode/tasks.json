@@ -6,12 +6,12 @@
 			"label": "docker-build",
 			"platform": "node",
 			"dockerBuild": {
-				"dockerfile": "${workspaceFolder}/app_api/Dockerfile",
-				"context": "${workspaceFolder}/app_api",
+				"dockerfile": "${workspaceFolder}/app-api/Dockerfile",
+				"context": "${workspaceFolder}/app-api",
 				"pull": true
 			},
 			"node": {
-				"package": "${workspaceFolder}/app_api/package.json"
+				"package": "${workspaceFolder}/app-api/package.json"
 			}
 		},
 		{
@@ -22,7 +22,7 @@
 			],
 			"platform": "node",
 			"node": {
-				"package": "${workspaceFolder}/app_api/package.json"
+				"package": "${workspaceFolder}/app-api/package.json"
 			}
 		},
 		{
@@ -38,7 +38,7 @@
 				}
 			},
 			"node": {
-				"package": "${workspaceFolder}/app_api/package.json",
+				"package": "${workspaceFolder}/app-api/package.json",
 				"enableDebugging": true
 			}
 		}

@@ -7,8 +7,8 @@
             "preLaunchTask": "docker-run: debug",
             "platform": "node",
             "node": {
-                "package": "${workspaceFolder}/app_api/package.json",
-                "localRoot": "${workspaceFolder}/app_api"
+                "package": "${workspaceFolder}/app-api/package.json",
+                "localRoot": "${workspaceFolder}/app-api"
             }
         }
     ]
