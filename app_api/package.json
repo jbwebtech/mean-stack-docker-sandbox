@@ -1,0 +1,18 @@
+{
+  "name": "mean-stack-docker-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox environment to stand up a MEAN app with Docker.",
+  "main": "app_api.js",
+  "scripts": {
+    "start": "node ./app_api.js",
+    "dev": "nodemon ./app_api.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}
