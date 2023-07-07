@@ -1,0 +1,11 @@
+{
+    "name": "app-cdn",
+    "version": "1.0.0",
+    "description": "Sandbox environment to stand up a MEAN app with Docker.",
+    "main": "app-cdn.js",
+    "private": true,
+    "scripts": {
+        "start": "node ./app-cdn.js",
+        "debug": "nodemon ./app-cdn.js"
+    }
+}
