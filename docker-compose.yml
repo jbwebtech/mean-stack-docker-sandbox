@@ -1,0 +1,24 @@
+version: '3.0'
+
+services:
+  meanapp-api:
+    image: meanapp-api:latest
+    build:
+      context: app-api
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      VIRTUAL_HOST: app-api.docker.local
+    ports:
+      - 3199:3000
+
+  meanapp-web:
+    image: meanapp-web:latest
+    build:
+      context: app-web
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      VIRTUAL_HOST: app-web.docker.local
+    ports:
+      - 8080:3000

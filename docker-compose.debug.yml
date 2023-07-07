@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  appapi:
+    image: appapi
+    build:
+      context: app-api
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+      - 8100:8100
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "app-api.js"]
