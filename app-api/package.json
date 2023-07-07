@@ -1,14 +1,13 @@
 {
-  "name": "mean-stack-docker-sandbox",
+  "name": "app-api",
   "version": "1.0.0",
   "description": "Sandbox environment to stand up a MEAN app with Docker.",
   "main": "app-api.js",
+  "private": true,
   "scripts": {
     "start": "node ./app-api.js",
     "debug": "nodemon ./app-api.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",

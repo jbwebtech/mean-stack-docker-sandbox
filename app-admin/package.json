@@ -1,0 +1,14 @@
+{
+    "name": "app-admin",
+    "version": "1.0.0",
+    "description": "Sandbox environment to stand up a MEAN app with Docker.",
+    "main": "app-admin.js",
+    "private": true,
+    "scripts": {
+      "start": "node ./app-admin.js",
+      "debug": "nodemon ./app-admin.js"
+    },
+    "dependencies": {
+    }
+  }
+  

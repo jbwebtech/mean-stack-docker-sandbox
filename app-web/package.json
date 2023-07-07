@@ -1,6 +1,8 @@
 {
   "name": "app-web",
   "version": "1.0.0",
+  "description": "Sandbox environment to stand up a MEAN app with Docker.",
+  "main": "app-api.js",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
