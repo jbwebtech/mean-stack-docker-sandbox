@@ -14,14 +14,15 @@ Sandbox environment to stand up a MEAN app with Docker.
     cd app-api
     npm install
     docker build --no-cache -t meanapp-api:latest .
-    docker run -d --rm -p 3000:3000 meanapp-api:latest
+    docker run -d --rm -p 3000:3000 --env PORT=3000 --env NODE_ENV=production --env VIRTUAL_HOST=app-api.docker.local meanapp-api:latest
     cd ..
 
 
     cd app-web
     npm install
     docker build --no-cache -t meanapp-web:latest .
-    docker run -d --rm -p 3100:3100 meanapp-web:latest
+    docker run -d --rm -p 8100:8100 --env PORT=8100 --env NODE_ENV=production --env VIRTUAL_HOST=app-web.docker.local meanapp-web:latest
+
     cd ..
 
 Connect to the REST API: [http://127.0.0.1:3000](http://127.0.0.1:3000)  
