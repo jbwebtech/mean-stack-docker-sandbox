@@ -1,1 +1,1 @@
-console.log("Starting DB")
+console.log("Starting CDN")
